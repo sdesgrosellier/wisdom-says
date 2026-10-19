@@ -1,4 +1,4 @@
-// Round Table mark: nine spheres on a circle seen from just above the table.
+// Wisdom Says mark: nine spheres on a circle seen from just above the table.
 // The front sphere (you) is largest; the two beside it are 30% smaller; the rest
 // shrink as they curve away. Flat fills so it stays crisp at any size.
 
@@ -29,7 +29,7 @@ export function Logo({
 }) {
   const height = Math.round(width * 0.65);
   return (
-    <Svg width={width} height={height} viewBox="-200 -130 400 260" accessibilityLabel="Round Table" role="img">
+    <Svg width={width} height={height} viewBox="-200 -130 400 260" accessibilityLabel="Wisdom Says" role="img">
       {table ? <Ellipse cx={0} cy={40} rx={190} ry={78} fill="#E9F1F3" /> : null}
       {RING.map((s, i) => (
         <Circle key={i} cx={s.cx} cy={s.cy} r={s.r} fill={s.fill} />

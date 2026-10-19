@@ -10,7 +10,7 @@ export const isSupabaseConfigured = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 
 if (!isSupabaseConfigured && __DEV__) {
   console.warn(
-    "[roundtable] EXPO_PUBLIC_SUPABASE_URL / EXPO_PUBLIC_SUPABASE_ANON_KEY are not set. Copy .env.example to .env.",
+    "[wisdomsays] EXPO_PUBLIC_SUPABASE_URL / EXPO_PUBLIC_SUPABASE_ANON_KEY are not set. Copy .env.example to .env.",
   );
 }
 
@@ -24,7 +24,7 @@ function createWebStorage(): SupportedStorage {
   const ls = (() => {
     try {
       const s = globalThis.localStorage;
-      const probe = "__roundtable_probe__";
+      const probe = "__wisdomsays_probe__";
       s.setItem(probe, "1");
       s.removeItem(probe);
       return s;

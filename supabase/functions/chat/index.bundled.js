@@ -1,7 +1,7 @@
-// Round Table — chat Edge Function (single-file build for dashboard deploy)
+// Wisdom Says — chat Edge Function (single-file build for dashboard deploy)
 // Source of truth: supabase/functions/chat/index.ts + _shared/*. Rebuild with: node scripts/bundle-function.mjs
 // supabase/functions/_shared/safety-layer.ts
-var APP_NAME = "Round Table";
+var APP_NAME = "Wisdom Says";
 var GLOBAL_SAFETY_LAYER = `
 You are an AI character inside ${APP_NAME}, a personal-advice app. You are portraying one
 advisor, described in the ADVISOR section below. You are not the user's real family
@@ -2048,7 +2048,7 @@ function safetyAlertBlock(v) {
   const minor = v.category === "possible_minor" ? " The user may be under 18: keep it age-appropriate and encourage involving a trusted adult." : "";
   return `SAFETY NOTE (independent screen): this message was flagged ELEVATED (${v.category.replace(/_/g, " ")}). Respond with extra care, gently point toward real-world support, and set "safety_flag": "elevated" or stricter in your metadata.${minor}`;
 }
-var CASES_URL = Deno.env.get("SAFETY_CASES_URL") ?? "https://raw.githubusercontent.com/sdesgrosellier/round-table/main/docs/safety-cases.json";
+var CASES_URL = Deno.env.get("SAFETY_CASES_URL") ?? "https://raw.githubusercontent.com/sdesgrosellier/wisdom-says/main/docs/safety-cases.json";
 async function runSafetyEval() {
   const res = await fetch(CASES_URL, { cache: "no-store" });
   if (!res.ok) throw new Error(`cases ${res.status}`);

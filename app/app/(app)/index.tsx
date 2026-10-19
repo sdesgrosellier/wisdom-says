@@ -93,7 +93,7 @@ export default function Home() {
             <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
               <View style={{ flexDirection: "row", alignItems: "center", gap: spacing.sm }}>
                 <Logo width={40} />
-                <Text style={{ fontSize: 17, fontWeight: "800", color: t.text, letterSpacing: -0.2 }}>Round Table</Text>
+                <Text style={{ fontSize: 17, fontWeight: "800", color: t.text, letterSpacing: -0.2 }}>Wisdom Says</Text>
               </View>
               <View style={{ flexDirection: "row", gap: spacing.md, alignItems: "center" }}>
                 <Pressable

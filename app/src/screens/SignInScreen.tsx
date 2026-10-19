@@ -34,7 +34,7 @@ function friendlyAuthError(message: string, mode: Mode): string {
     return "This account needs its email confirmed. Check your inbox for the link.";
   }
   if (m.includes("database error saving new user") || m.includes("invite_code_invalid")) {
-    return "That invite code isn't valid (or has been used up). Round Table is in a private beta; ask Shane for a code.";
+    return "That invite code isn't valid (or has been used up). Wisdom Says is in a private beta; ask Shane for a code.";
   }
   return message;
 }
@@ -59,7 +59,7 @@ export default function SignInScreen() {
       return;
     }
     if (mode === "signup" && !inviteCode.trim()) {
-      setError("Enter your invite code. Round Table is in a private beta.");
+      setError("Enter your invite code. Wisdom Says is in a private beta.");
       return;
     }
     setBusy(true);
@@ -94,7 +94,7 @@ export default function SignInScreen() {
         >
           <View style={{ gap: spacing.sm, marginBottom: spacing.lg }}>
             <Logo width={132} table />
-            <Title>Round Table</Title>
+            <Title>Wisdom Says</Title>
             <Body muted>
               One question, many voices: family, a stranger, a kid, an alien, figures from history, and Scripture.
               Then see the full circle.
@@ -189,7 +189,7 @@ export default function SignInScreen() {
             style={{ alignSelf: "center", padding: spacing.sm }}
           >
             <Small>
-              {mode === "signin" ? "New to Round Table? " : "Already have an account? "}
+              {mode === "signin" ? "New to Wisdom Says? " : "Already have an account? "}
               <Text style={{ color: t.primary, fontWeight: "600" }}>
                 {mode === "signin" ? "Create one" : "Sign in"}
               </Text>
@@ -197,7 +197,7 @@ export default function SignInScreen() {
           </Pressable>
 
           <Small style={{ marginTop: spacing.xl }}>
-            Round Table's advisors are AI characters, not real people and not licensed professionals. For 18+.
+            The advisors in Wisdom Says are AI characters, not real people and not licensed professionals. For 18+.
             If you're in crisis, call or text 988 (US) or your local emergency number.
           </Small>
         </ScrollView>

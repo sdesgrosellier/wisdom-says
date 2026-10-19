@@ -9,7 +9,7 @@ const boot = `<div id="boot" style="position:fixed;inset:0;display:flex;flex-dir
     <script>
       (function () {
         var diag = document.getElementById("diag"), lines = [];
-        function show(msg) { lines.push(msg); diag.textContent = "Round Table couldn't start. Please tell Claude this:\\n" + lines.join("\\n"); diag.style.display = "block"; }
+        function show(msg) { lines.push(msg); diag.textContent = "Wisdom Says couldn't start. Please tell Claude this:\\n" + lines.join("\\n"); diag.style.display = "block"; }
         window.addEventListener("error", function (e) { show("error: " + (e.message || String(e.error || e)) + (e.filename ? " (" + e.filename.split("/").pop() + ":" + e.lineno + ")" : "")); });
         window.addEventListener("unhandledrejection", function (e) { var r = e.reason; show("rejection: " + (r && (r.message || r.toString()))); });
         var tries = 0, timer = setInterval(function () {
@@ -22,6 +22,6 @@ const boot = `<div id="boot" style="position:fixed;inset:0;display:flex;flex-dir
     <div id="root"></div>`;
 html = html.replace('<div id="root"></div>', boot);
 html = html.replace('<meta httpEquiv="X-UA-Compatible" content="IE=edge" />\n', "");
-html = html.replace("<title>Round Table</title>", '<title>Round Table</title>\n    <meta name="robots" content="noindex" />\n    <meta name="color-scheme" content="light dark" />');
+html = html.replace("<title>Wisdom Says</title>", '<title>Wisdom Says</title>\n    <meta name="robots" content="noindex" />\n    <meta name="color-scheme" content="light dark" />');
 writeFileSync(file, html);
 console.log("decorated", file);

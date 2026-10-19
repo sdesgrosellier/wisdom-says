@@ -3,9 +3,9 @@
     "@resvg/resvg-js": "^2.6.2",
     "esbuild": "^0.28.2"
   },
-  "name": "round-table-monorepo",
+  "name": "wisdom-says-monorepo",
   "private": true,
-  "description": "Round Table — tooling for bundling Edge Functions",
+  "description": "Wisdom Says — tooling for bundling Edge Functions",
   "scripts": {
     "bundle:chat": "node scripts/bundle-function.mjs"
   }

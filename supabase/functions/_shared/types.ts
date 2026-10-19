@@ -1,4 +1,4 @@
-// Shared types for Round Table Edge Functions.
+// Shared types for Wisdom Says Edge Functions.
 
 export type AdvisorId =
   | "mom"

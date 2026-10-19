@@ -1,4 +1,4 @@
--- Round Table — Phase 3 (memory) + beta guardrails.
+-- Wisdom Says — Phase 3 (memory) + beta guardrails.
 --
 -- * Embeddings come from the Supabase Edge Runtime's built-in gte-small model
 --   (384 dimensions, no external account), so the vector columns shrink from 1536.

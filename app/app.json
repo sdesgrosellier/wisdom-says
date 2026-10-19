@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "Round Table",
-    "slug": "round-table",
+    "name": "Wisdom Says",
+    "slug": "wisdom-says",
     "version": "0.1.0",
-    "scheme": "roundtable",
+    "scheme": "wisdomsays",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -15,14 +15,14 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.roundtable.app",
+      "bundleIdentifier": "com.wisdomsays.app",
       "infoPlist": {
         "NSMicrophoneUsageDescription": "So you can talk with your advisors out loud.",
         "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
-      "package": "com.roundtable.app",
+      "package": "com.wisdomsays.app",
       "adaptiveIcon": {
         "backgroundColor": "#F5F8F9",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -44,7 +44,7 @@
     ],
     "experiments": {
       "typedRoutes": true,
-      "baseUrl": "/round-table"
+      "baseUrl": "/wisdom-says"
     }
   }
 }

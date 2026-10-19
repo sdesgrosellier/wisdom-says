@@ -1,4 +1,4 @@
-// Small, shared UI primitives in the Round Table style.
+// Small, shared UI primitives in the Wisdom Says style.
 
 import React from "react";
 import {

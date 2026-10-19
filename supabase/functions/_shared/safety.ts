@@ -123,7 +123,7 @@ export function safetyAlertBlock(v: SafetyVerdict): string {
 // ---------------------------------------------------------------------------
 
 const CASES_URL = Deno.env.get("SAFETY_CASES_URL") ??
-  "https://raw.githubusercontent.com/sdesgrosellier/round-table/main/docs/safety-cases.json";
+  "https://raw.githubusercontent.com/sdesgrosellier/wisdom-says/main/docs/safety-cases.json";
 
 export interface EvalRow {
   id: string;

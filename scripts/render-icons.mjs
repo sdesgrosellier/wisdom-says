@@ -1,4 +1,4 @@
-// Renders the Round Table mark into every PNG the app needs (icon, splash, Android
+// Renders the Wisdom Says mark into every PNG the app needs (icon, splash, Android
 // adaptive layers, favicon). Run: node scripts/render-icons.mjs
 import { Resvg } from "@resvg/resvg-js";
 import { mkdirSync, writeFileSync } from "node:fs";

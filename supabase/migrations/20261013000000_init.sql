@@ -1,4 +1,4 @@
--- Round Table (formerly Round Table / Hearth) — initial schema (Phase 1). Implements the Section 13 data model with
+-- Wisdom Says (formerly Wisdom Says, Sounding Board and Hearth) — initial schema (Phase 1). Implements the Section 13 data model with
 -- Row-Level Security so a user can only ever touch their own rows.
 --
 -- Conventions

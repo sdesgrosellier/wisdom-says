@@ -1,4 +1,4 @@
-// Round Table visual language — "Still Water": light, low-saturation, blue-green
+// Wisdom Says visual language — "Still Water": light, low-saturation, blue-green
 // and blush. Chosen from color-emotion research: high lightness and low saturation
 // read as calm and relief; blue/white carry relief, green/pink/apricot carry only
 // positive associations; brown and grey lean negative (so they are gone).
